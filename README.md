@@ -5,7 +5,7 @@
 [![NPM version](https://img.shields.io/npm/v/pepto.svg)](https://www.npmjs.com/package/pepto)
 [![build](https://github.com/encrypit/pepto/actions/workflows/build.yml/badge.svg)](https://github.com/encrypit/pepto/actions/workflows/build.yml)
 
-Generate a hex string digest from a given message. See [SubtleCrypto.digest()](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/digest).
+Generate a hex string digest from a given message. See [`SubtleCrypto.digest()`](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/digest).
 
 ## Quick Start
 
