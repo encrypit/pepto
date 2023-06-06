@@ -3,14 +3,16 @@
 [![NPM](https://nodei.co/npm/pepto.png)](https://nodei.co/npm/pepto/)
 
 [![NPM version](https://img.shields.io/npm/v/pepto.svg)](https://www.npmjs.com/package/pepto)
-[![build](https://github.com/remarkablemark/pepto/actions/workflows/build.yml/badge.svg)](https://github.com/remarkablemark/pepto/actions/workflows/build.yml)
+[![build](https://github.com/encrypit/pepto/actions/workflows/build.yml/badge.svg)](https://github.com/encrypit/pepto/actions/workflows/build.yml)
 
-npm package TypeScript template.
+Generate a hex string digest from a given message. See [SubtleCrypto.digest()](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/digest).
 
 ## Quick Start
 
 ```ts
-import 'pepto';
+import { digest } from 'pepto';
+
+await digest('SHA-256', 'Hello, World!');
 ```
 
 ## Installation
@@ -29,14 +31,48 @@ yarn add pepto
 
 ## Usage
 
+Import ES Modules:
+
 ```ts
-import 'pepto';
+import { digest } 'pepto';
 ```
 
-## Release
+Require with CommonJS:
 
-Release is automated with [Release Please](https://github.com/googleapis/release-please).
+```ts
+const { digest } = require('pepto');
+```
+
+Hash message with `SHA-1` algorithm:
+
+```ts
+await digest('SHA-1', 'message');
+```
+
+Hash message with `SHA-256` algorithm:
+
+```ts
+await digest('SHA-256', 'message');
+```
+
+Hash message with `SHA-384` algorithm:
+
+```ts
+await digest('SHA-384', 'message');
+```
+
+Hash message with `SHA-512` algorithm:
+
+```ts
+await digest('SHA-512', 'message');
+```
+
+Use promise instead of async-await:
+
+```ts
+digest('SHA-512', 'message').then((hex) => console.log(hex));
+```
 
 ## License
 
-[MIT](https://github.com/remarkablemark/pepto/blob/master/LICENSE)
+[MIT](https://github.com/encrypit/pepto/blob/master/LICENSE)
