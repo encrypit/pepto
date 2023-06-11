@@ -73,6 +73,24 @@ Use promise instead of async-await:
 digest('SHA-512', 'message').then((hex) => console.log(hex));
 ```
 
+## FAQ
+
+### ReferenceError: TextEncoder is not defined
+
+If you get this error in your Jest tests, then add the following to your `setupTests.ts`:
+
+```ts
+import { TextEncoder } from 'util';
+window.TextEncoder = TextEncoder;
+```
+
+Or add the following to your `setupTests.js`:
+
+```js
+const { TextEncoder } = require('util');
+window.TextEncoder = TextEncoder;
+```
+
 ## License
 
 [MIT](https://github.com/encrypit/pepto/blob/master/LICENSE)
