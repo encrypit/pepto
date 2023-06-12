@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/encrypit/pepto/compare/v1.0.0...v1.0.1) (2023-06-12)
+
+
+### Code Refactoring
+
+* **digest:** tidy type parameter and remove type Algorithm ([1c42eb9](https://github.com/encrypit/pepto/commit/1c42eb97bb4cff315e7b98c1aaed534666f51f52))
+
 ## 1.0.0 (2023-06-06)
 
 
