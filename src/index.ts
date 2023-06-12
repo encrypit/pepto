@@ -2,8 +2,6 @@ import { subtle } from 'crypto';
 
 import { createDigest } from './digest';
 
-export type { Algorithm } from './digest';
-
 /**
  * Generates a hex string digest from a given message.
  *

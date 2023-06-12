@@ -1,7 +1,5 @@
 import type { webcrypto } from 'crypto';
 
-export type Algorithm = 'SHA-1' | 'SHA-256' | 'SHA-384' | 'SHA-512';
-
 /**
  * Creates a digest function.
  *
@@ -10,7 +8,7 @@ export type Algorithm = 'SHA-1' | 'SHA-256' | 'SHA-384' | 'SHA-512';
  */
 export function createDigest(subtle: webcrypto.SubtleCrypto) {
   return async function digest(
-    algorithm: Algorithm,
+    algorithm: 'SHA-1' | 'SHA-256' | 'SHA-384' | 'SHA-512',
     message: string
   ): Promise<string> {
     const data = new TextEncoder().encode(message);
