@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/encrypit/pepto/compare/v1.0.1...v1.0.2) (2023-06-15)
+
+
+### Code Refactoring
+
+* **module:** move mjs files from src to module directory ([a624dd1](https://github.com/encrypit/pepto/commit/a624dd1222e3641337ed3039029602e9bb033aa5))
+
 ## [1.0.1](https://github.com/encrypit/pepto/compare/v1.0.0...v1.0.1) (2023-06-12)
 
 
