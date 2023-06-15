@@ -35,6 +35,9 @@ jobs:
       - name: Run tests
         run: npm run test:ci
 
+      - name: Run module tests
+        run: npm run test:module
+
       - name: Codecov
         uses: codecov/codecov-action@v3
 
