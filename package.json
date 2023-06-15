@@ -1,6 +1,6 @@
 {
   "name": "pepto",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate a hex string digest from a given message.",
   "author": "Mark <mark@remarkablemark.org>",
   "main": "lib/index.js",
