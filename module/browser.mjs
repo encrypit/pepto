@@ -1,1 +1,1 @@
-export { digest } from '../lib/browser.js';
+export * from '../lib/browser.js';
