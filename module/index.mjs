@@ -1,1 +1,1 @@
-export * from '../lib/index.js';
+export { digest } from '../lib/index.js';
