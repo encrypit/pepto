@@ -5,6 +5,6 @@ describe('digest', () => {
     'hashes message with algorithm "%s"',
     async (algorithm) => {
       expect(await digest(algorithm, '')).toMatchSnapshot();
-    }
+    },
   );
 });

@@ -9,7 +9,7 @@ import type { webcrypto } from 'crypto';
 export function createDigest(subtle: webcrypto.SubtleCrypto) {
   return async function digest(
     algorithm: 'SHA-1' | 'SHA-256' | 'SHA-384' | 'SHA-512',
-    message: string
+    message: string,
   ): Promise<string> {
     const data = new TextEncoder().encode(message);
     const hashBuffer = await subtle.digest(algorithm, data);
