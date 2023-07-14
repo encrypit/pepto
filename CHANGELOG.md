@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/encrypit/pepto/compare/v1.0.2...v1.0.3) (2023-07-14)
+
+
+### Build System
+
+* rename directory `module` to `esm` ([9f52ecf](https://github.com/encrypit/pepto/commit/9f52ecfaddcd8047ca7f6b11ee79d9155a39db1a))
+
 ## [1.0.2](https://github.com/encrypit/pepto/compare/v1.0.1...v1.0.2) (2023-06-15)
 
 
