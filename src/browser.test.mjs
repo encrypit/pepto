@@ -1,10 +1,16 @@
-import { describe, it } from 'node:test';
+import crypto from 'node:crypto';
+import { before, describe, it } from 'node:test';
 
 import assert from 'assert';
 
-import { digest } from './index.mjs';
+describe('browser', () => {
+  let digest;
 
-describe('index', () => {
+  before(async () => {
+    global.crypto = crypto;
+    digest = (await import('../esm/browser.js')).digest;
+  });
+
   it('exports "digest" function', () => {
     assert.strictEqual(typeof digest, 'function');
   });
