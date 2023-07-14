@@ -3,22 +3,22 @@
   "version": "1.0.2",
   "description": "Generate a hex string digest from a given message.",
   "author": "Mark <mark@remarkablemark.org>",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "cjs/index.js",
+  "types": "cjs/index.d.ts",
   "module": "module/index.mjs",
   "exports": {
-    "types": "./lib/index.d.ts",
+    "types": "./cjs/index.d.ts",
     "import": "./module/index.mjs",
-    "require": "./lib/index.js"
+    "require": "./cjs/index.js"
   },
   "browser": {
-    "./lib/index.js": "./lib/browser.js",
+    "./cjs/index.js": "./cjs/browser.js",
     "./module/index.mjs": "./module/browser.mjs"
   },
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "clean": "rm -rf coverage docs lib",
+    "clean": "rm -rf cjs coverage docs",
     "docs": "typedoc",
     "lint": "eslint --ignore-path .gitignore --ext .js,.mjs,.ts .",
     "lint:fix": "npm run lint -- --fix",
@@ -62,7 +62,7 @@
     "typescript": "5.1.6"
   },
   "files": [
-    "lib/",
+    "cjs/",
     "module/"
   ],
   "license": "MIT"

@@ -1,1 +1,1 @@
-export { digest } from '../lib/index.js';
+export { digest } from '../cjs/index.js';
