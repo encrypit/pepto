@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/encrypit/pepto/compare/v1.0.3...v1.0.4) (2023-07-15)
+
+
+### Documentation
+
+* **readme:** correct code block ([d0e6942](https://github.com/encrypit/pepto/commit/d0e69423674e75ed1062199a5872be2ae7303ca2))
+
 ## [1.0.3](https://github.com/encrypit/pepto/compare/v1.0.2...v1.0.3) (2023-07-14)
 
 
