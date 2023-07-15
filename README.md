@@ -6,7 +6,7 @@
 [![build](https://github.com/encrypit/pepto/actions/workflows/build.yml/badge.svg)](https://github.com/encrypit/pepto/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/encrypit/pepto/branch/master/graph/badge.svg?token=J9LPLI8JN9)](https://codecov.io/gh/encrypit/pepto)
 
-Generate a hex string digest from a given message. See [`SubtleCrypto.digest()`](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/digest) and [demo](https://replit.com/@remarkablemark/pepto).
+Generate a hex string digest from a given message. See [`SubtleCrypto.digest()`](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/digest) and [Replit demo](https://replit.com/@remarkablemark/pepto).
 
 ## Quick Start
 
@@ -35,7 +35,7 @@ yarn add pepto
 Import ES Modules:
 
 ```ts
-import { digest } 'pepto';
+import { digest } from 'pepto';
 ```
 
 Require with CommonJS:
