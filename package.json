@@ -4,10 +4,8 @@
   "description": "Generate a hex string digest from a given message.",
   "author": "Mark <mark@remarkablemark.org>",
   "main": "cjs/index.js",
-  "types": "cjs/index.d.ts",
   "module": "esm/index.js",
   "exports": {
-    "types": "./cjs/index.d.ts",
     "import": "./esm/index.js",
     "require": "./cjs/index.js"
   },
