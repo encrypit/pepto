@@ -8,7 +8,7 @@ describe('browser', () => {
 
   before(async () => {
     global.crypto = crypto;
-    digest = (await import('../esm/browser.js')).digest;
+    digest = (await import('../cjs/browser.js')).digest;
   });
 
   it('exports "digest" function', () => {

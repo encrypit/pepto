@@ -4,21 +4,14 @@
   "description": "Generate a hex string digest from a given message.",
   "author": "Mark <mark@remarkablemark.org>",
   "main": "cjs/index.js",
-  "module": "esm/index.js",
-  "exports": {
-    "import": "./esm/index.js",
-    "require": "./cjs/index.js"
-  },
+  "types": "./cjs/index.d.ts",
   "browser": {
-    "./cjs/index.js": "./cjs/browser.js",
-    "./esm/index.js": "./esm/browser.js"
+    "./cjs/index.js": "./cjs/browser.js"
   },
   "scripts": {
-    "build": "npm run build:cjs && npm run build:esm",
-    "build:cjs": "tsc",
-    "build:esm": "tsc --module nodenext --outDir esm",
+    "build": "tsc",
     "build:watch": "tsc --watch",
-    "clean": "rm -rf cjs coverage docs esm",
+    "clean": "rm -rf cjs coverage docs",
     "docs": "typedoc",
     "lint": "eslint --ignore-path .gitignore --ext .js,.mjs,.ts .",
     "lint:fix": "npm run lint -- --fix",
@@ -28,7 +21,7 @@
     "prepublishOnly": "pinst --disable && npm run lint && npm run lint:tsc && npm run test:ci && npm run test:esm && npm run clean && npm run build",
     "test": "jest",
     "test:ci": "CI=true jest --ci --colors --coverage",
-    "test:esm": "npm run build:esm && node --test src",
+    "test:esm": "npm run build && node --test src",
     "test:watch": "jest --watch"
   },
   "repository": {
@@ -63,7 +56,7 @@
   },
   "files": [
     "cjs/",
-    "esm/"
+    "src/"
   ],
   "license": "MIT"
 }
