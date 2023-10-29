@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/encrypit/pepto/compare/v1.0.4...v1.0.5) (2023-10-29)
+
+
+### Build System
+
+* **package:** specify "types", remove "esm/" dir, & add "src/" to files ([a2261bc](https://github.com/encrypit/pepto/commit/a2261bc870f61a856337261b9add4aded2f45c02))
+
 ## [1.0.4](https://github.com/encrypit/pepto/compare/v1.0.3...v1.0.4) (2023-07-15)
 
 
