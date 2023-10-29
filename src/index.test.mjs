@@ -2,7 +2,7 @@ import { describe, it } from 'node:test';
 
 import assert from 'assert';
 
-import { digest } from '../esm/index.js';
+import { digest } from '../cjs/index.js';
 
 describe('index', () => {
   it('exports "digest" function', () => {
