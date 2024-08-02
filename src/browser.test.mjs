@@ -1,4 +1,3 @@
-import crypto from 'node:crypto';
 import { before, describe, it } from 'node:test';
 
 import assert from 'assert';
@@ -7,7 +6,6 @@ describe('browser', () => {
   let digest;
 
   before(async () => {
-    global.crypto = crypto;
     digest = (await import('../cjs/browser.js')).digest;
   });
 
