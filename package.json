@@ -34,8 +34,8 @@
     "pepto"
   ],
   "devDependencies": {
-    "@commitlint/cli": "19.4.0",
-    "@commitlint/config-conventional": "19.2.2",
+    "@commitlint/cli": "19.4.1",
+    "@commitlint/config-conventional": "19.4.1",
     "@types/jest": "29.5.12",
     "@types/node": "22.5.0",
     "@typescript-eslint/eslint-plugin": "8.3.0",
