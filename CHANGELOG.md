@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.0.7 (2025-08-05)
+
+
+### Miscellaneous Chores
+
+* release 1.0.6 ([760b3c9](https://github.com/encrypit/pepto/commit/760b3c983482d8551d506a892149b6a494df87d6))
+
+
+### Continuous Integration
+
+* **github:** publish package to npm registry with provenance ([04332b6](https://github.com/encrypit/pepto/commit/04332b65b201d8a21bbfd7bf5f72bd7064cc0387))
+
 ## [1.0.7](https://github.com/encrypit/pepto/compare/v1.0.6...v1.0.7) (2024-10-06)
 
 
