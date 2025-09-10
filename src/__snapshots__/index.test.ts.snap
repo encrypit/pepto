@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`digest hashes message with algorithm "SHA-1" 1`] = `"da39a3ee5e6b4b0d3255bfef95601890afd80709"`;
 
