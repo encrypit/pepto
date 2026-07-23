@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.8 (2026-07-23)
+
+
+### Miscellaneous Chores
+
+* release 1.0.8 ([f086ceb](https://github.com/encrypit/pepto/commit/f086cebc239cd6ec0f1c902cea90fd8f0cb8e36d))
+
 ## [1.0.8](https://github.com/encrypit/pepto/compare/v1.0.7...v1.0.8) (2025-08-05)
 
 ### Miscellaneous Chores
