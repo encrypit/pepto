@@ -6,7 +6,7 @@
 [![build](https://github.com/encrypit/pepto/actions/workflows/build.yml/badge.svg)](https://github.com/encrypit/pepto/actions/workflows/build.yml)
 [![codecov](https://codecov.io/gh/encrypit/pepto/branch/master/graph/badge.svg?token=J9LPLI8JN9)](https://codecov.io/gh/encrypit/pepto)
 
-Generate a hex string digest from a given message. See [`SubtleCrypto.digest()`](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/digest) and [Replit demo](https://replit.com/@remarkablemark/pepto).
+Generate a hex string digest from a given message. See [`SubtleCrypto.digest()`](https://developer.mozilla.org/docs/Web/API/SubtleCrypto/digest).
 
 ## Quick Start
 
@@ -14,6 +14,7 @@ Generate a hex string digest from a given message. See [`SubtleCrypto.digest()`]
 import { digest } from 'pepto';
 
 await digest('SHA-256', 'Hello, World!');
+// 'dffd6021bb2bd5b0af676290809ec3a53191dd81c7f70a4b28688a362182986f'
 ```
 
 ## Installation
@@ -78,7 +79,7 @@ digest('SHA-512', 'message').then((hex) => console.log(hex));
 
 ### ReferenceError: TextEncoder is not defined
 
-If you get this error in your Jest tests, then add the following to your `setupTests.ts`:
+If you get this error in your tests, then add the following to your `setupTests.ts`:
 
 ```ts
 import { TextEncoder } from 'util';
