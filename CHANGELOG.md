@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.9](https://github.com/encrypit/pepto/compare/v1.0.8...v1.0.9) (2026-09-08)
+
+### Build System
+
+- **tsconfig:** change target from es5 to es6 ([a13c90f](https://github.com/encrypit/pepto/commit/a13c90f6ecd67e4a96eb3da961754202064b83e5))
+
 ## [1.0.8](https://github.com/encrypit/pepto/compare/v1.0.7...v1.0.8) (2025-08-05)
 
 ### Miscellaneous Chores
