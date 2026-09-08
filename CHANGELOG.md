@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.10](https://github.com/encrypit/pepto/compare/v1.0.9...v1.0.10) (2026-09-08)
+
+
+### Build System
+
+* **package:** fix script prepublishOnly ([6b7a6df](https://github.com/encrypit/pepto/commit/6b7a6df25187c9e37f02f32739e09d2afe5a8b92))
+
 ## [1.0.9](https://github.com/encrypit/pepto/compare/v1.0.8...v1.0.9) (2026-09-08)
 
 ### Build System
