@@ -1,15 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "commonjs",
-    "lib": ["dom"],
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.tsbuildinfo",
+    "target": "es6",
+    "module": "esnext",
+    "lib": ["dom", "es2017"],
+    "types": ["node", "jest"],
     "forceConsistentCasingInFileNames": true,
     "strict": true,
-    "outDir": "cjs"
+    "rootDir": ".",
+    "allowJs": true,
+    "noEmit": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "src/**/*.test.ts"]
+  "include": [
+    "eslint.config.mts",
+    "jest.config.ts",
+    "src",
+    "src/browser.test.mjs",
+    "src/index.test.mjs"
+  ]
 }
