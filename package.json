@@ -17,7 +17,7 @@
     "lint:fix": "npm run lint -- --fix",
     "lint:tsc": "tsc",
     "prepare": "husky",
-    "prepublishOnly": "npm run lint && npm run lint:tsc && npm run test:ci && npm run test:esm && npm run clean && npm run build",
+    "prepublishOnly": "npm run build && npm run lint && npm run lint:tsc && npm run test:ci && npm run test:esm && npm run clean && npm run build",
     "test": "vitest run",
     "test:ci": "CI=true npm test -- --color --coverage",
     "test:esm": "npm run build && node --test src/**/*.test.mjs",
